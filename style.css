@@ -1,32 +1,165 @@
 <style>
 /* */
 /* Global Styles */
+  
+body {
+  margin:0 auto;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
 
-font-family: Helvetica, Arial, sans-serif; {
-font-weight: 300;
+.orangebg {
+  background-color: #f9b900;
+  padding: 20px;
+}
+
+h1 {
+  color: #2f3a8c;
+  text-decoration: none;
+}
+
+h2 {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  font-size: 250%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  font-size: 150%;
+  text-decoration: none;
+  color: rgb(0, 5, 72);
+  text-align: left;
+}
+
+h5 {
+  font-size: 250%;
+  color: #2f3a8c;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* images */
+.sitelogo img {
+  display: block;
+  position: absolute;
+  float: left;
+  width: 20%;
+}
+
+figure {
+	padding: 1em 0;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+	max-width: min-content;
+	margin: 0 auto;
+  position: static;
+}
+
+figure iframe {
+	display: block;
+	margin: 10px;
+  float: right;
+  padding: 15px;
+}
+
+.bg-img {
+
+  background-image: url("images/support.jpg");
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px
+}
+
+/* ul */
+
+ul#menu li {
+  display:inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* links */
+
+.link {
+  text-decoration: none;
+  padding: 20px 25px;
+  color: white;
+  text-align: center;
+}
+
+.link:visited {
+  text-decoration: none;
+  padding: 15px 25px;
+  color: white;
+  text-align: center;
 
 }
+
+.link:hover {
+  text-decoration: none;
+  background-color: white;
+  transition: background-color 0.25s ease-out;
+  cursor: pointer;
+}
+  
+}
+
 /*grid*/
 
-#grid-line {
+.grid-line {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+  padding: 15px;
+}
+
+#grid-col {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#grid-row {
+  display: grid;
+  grid-template-columns: auto auto;
+
 }
 div.cell {
-  background: #ffffff;
   padding: 10px;
 }
 
 .spancol {
   grid-column-start: 1;
   grid-column-end: 4;
+  padding: 10px;
 }
 
 .spanrow {
   grid-row-start: 2;
   grid-row-end: 4;
+  padding: 10px;
 }
+
+
 
 /* Nav bar */
 
@@ -38,13 +171,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #91c5ed;
+  text
 }
 
 .topnav a {
-  float: right;
   color: #f2f2f2;
-  text-align: right;
-  padding: 40px 25px;
+  float: right;
+  text-align: center;
+  padding: 50px 25px;
   text-decoration: none;
   font-size: 20px;
   transition: background-color 0.25s ease-out;
@@ -52,7 +186,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 
@@ -61,70 +195,137 @@ body {
   color: white;
 }
 
-/* media */
+/* footer */
 
-@media screen and (max-width: 500px) {
-  .topnav a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-/* donate container */
-  
-button {   
-       background-color: rgb(57, 145, 254);   
-       width: 100%;  
-        color: orange;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;   
-    }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        display: inline-block;   
-        border: 2px solid green;   
-        box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {   
-        padding: 25px;   
-        background-color: lightblue;  
-    }   
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #91c5ed;
+  color: white;
+  text-align: right;
+  z-index: 1;
+  float:right;
+  padding-right:15px;
+
+}
+
+.icon-style {
+  height: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.icon-style:hover {
+  background-color: rgb(44, 148, 226);
+  transition: background-color 0.25s ease-out;
+  cursor: pointer;
+}
 
 /* Read More button */
 
-#more {display: none;}
+#more {
+  display: none;
+  background-color: #91c5ed;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px; 
+  float: left;
+  cursor: pointer;
+  }
 
 
-/* footer section */ 
-footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #91c5ed;
-   color: white;
-   text-align: center;
+/* form */
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
- footer p {
-   padding: 0;
- }
+input[type=submit] {
+  background-color: #91c5ed;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px; 
+  float: left;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:  black;
+  transition: background-color 0.20s ease-in-out;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f9b900;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  #grid-col {
+    grid-template-columns: auto auto; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #grid-col {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: right;
+    padding: 10px 10px;
+  }
+
+    input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .sitelogo img{
+    width: 50%;
+    float: left;
+    padding: 15px, 15px;
+  }
+
+.icon-style {
+  height: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+
+}
+figure {
+		margin: 0;
+}
+figure iframe {
+		width: 100%;
+}
+figure img {
+		width: 100%;
+	
+}
+
 
 </style>

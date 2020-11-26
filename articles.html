@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<nav class="topnav">
+
+		<div class="sitelogo"> <img src="images/beyondblue.png" alt="site logo"/></div>
+
+		<a class="active" href="artciles.html">Articles</a>
+		<a href="contact.html">Get In Contact</a>
+		<a href="donate.html">Donate</a>
+		<a href="index.html">Home</a>
+	</nav>
+
+	<!-- help with this function obtained from: https://www.w3schools.com/howto/howto_js_read_more.asp-->
+	<script>
+		function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+	</script>
+
+  
+
+
+	<div class="cell spancol">
+		<h1>Articles</h1>
+		<p>  </p>
+	</div>
+ <div id="grid-line"> 
+	<div class="cell">
+		<h2>What is Depression?</h2>
+		<p>While we don’t actually know what causes depression in human beings, we have a number of things that may link to depression
+			development
+			<span id="dots">...</span><span id="more">Depression is a mental disorder that causes a fluctuating sense of sadness and overall loss of interest. Depression affects motivation, and mood as people may have trouble doing daily activities, and sometimes you may feel as if life isn't worth living. It is more than an occasional sadness, it is a serious mental condition that affects your physical and mental health. Depression does not have a cure, however like many things, there are remedies one can take to be as healthy and happy as possible. The two main treatments for depression are psychological and medical. Psychological. Cognitive behaviour therapy is a mindset that realises the way we think and act affects the way we feel. CBT involves identifying the cognitive actions that you may do that could be the root cause of depression. Behaviour therapy involves taking part in activities that are good for the mind. This may include outdoor activities, physical exercise, creating a routine or learning and instrument. Support groups. Parents, societies, friends and professional therapists can all help in connecting with others.</span></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+	</div>
+  
+
+
+<div class="orangebg">
+  	<div class="cell">
+    <h2>What to do if your friends are showing signs of self harm?</h2>
+    <p>First thing anyone can do is locate signs and symptoms, There are a few things to look out for. Behaviour, feelings, thoughts and physical<span id="dots">...</span><span id="more"><ol>
+      <li>Talk to them. This one may seem obvious but the first thing anyone can do is simply ask if they’re doing alright. Let them know that you’re always down to talk and can talk about anything, however do not pry if they are not willing to share every detail but allow them to open up to you when they are ready. More importantly than talking to them is listening to them. Once you’ve shared you concerns if they feel like opening up and venting a little, pay attention to every detail, let them talk. Don’t interrupt, act disinterested or argue. Let them speak their mind and you can share your thoughts after when the situation is more under control and less severe. Throughout the conversation just remember it’s about them and not you, try not to change the topic to focus too much on you (in some situations it can help to help them relate however it’s best to not do this too often), and show positive body language and tone to keep them calm. If you’re not free to talk or experiencing a busy period as many students do, refer them to a therapist or to a support network such as the Beyond Blue support program to ensure they have someone to talk to 24/7 </li>
+        
+      <li>Give them tips to help cope. There’s a good chance the person that you’re talking to is a good friend of yours that you know quite well. In that case, it may be in their best interest, depending on how fragile the situation is, for them to pick up hobbies or habits to allow their brain to produce the chemicals that it associates with happiness. Remind them of the guitar that hasn’t been played with in 3 months or go back to the gym with them (exercise is a great way to make the brain feel better), </li>
+      </ol>
+</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+</div>
+
+  	<div class="cell">
+    <h2>4 Things you can do to improve your study habits and feel good about learning</h2>
+    <p>Studying can feel unfair and unrewarding sometimes and many students may feel a sense of dread when studying. However, there may be some different approaches you can try that may drastically improve your learning skills<span id="dots">...</span><span id="more">
+      <ol>
+       <li> 
+         <h2> Study with a friend </h2>
+<p>Find a friend that is also planning on doing some study and plan on meeting up and studying together. You could test each other, exchange notes or give each other advice. Spending time with a friend during a stressful time is an easy way to ensure that you stay on track and retain information.</p> </li>
+<li>
+  <h4>Reward yourself on a break, and cut out distractions when working.</h4>
+<p>This one is pretty self explanatory. Work in short intervals, for example 45 mins, then take a 15 minute break. Repeat however often you need. Sitting down for hours and hours will eventually burn you out and in turn will make it much harder to focus. When completing a large study session sucessfully, reward yourself. Watch a movie, hang out with friends, have some comfort food. This will reinforce good study behaviours.</p></li>
+<li>
+  <h4>Self care</h4>
+<p>Eating healthy, regular exercise, getting enough sleep. These are all things you can do to 
+Change study spots often
+Changing the location in which you study could drastically improve memory retention and can also prevent major burnout. </p> </li>
+</ol>
+</span>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+	</div>
+  </div>
+
+      <div class="footer">
+        <a href="https://www.facebook.com/beyondblue"><img src="images/facebook.png" class="icon-style" alt="Facebook"></a>
+        <a href="https://twitter.com/beyondblue"><img src="images/twitter.png" class="icon-style" alt="Twitter"></a>
+        <a href="https://www.youtube.com/c/beyondblue"><img src="images/youtube.png" class="icon-style" alt="YouTube"></a>    <a href="https://www.instagram.com/beyondblueofficial/"><img src="images/instagram.png" class="icon-style" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/beyondblue/"><img src="images/linkedin.png" class="icon-style" alt="Linkedin"></a>
+    </div>
+    
+</body>
+</html>
