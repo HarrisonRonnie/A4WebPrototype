@@ -14,7 +14,7 @@ body {
 
 .orangebg {
   background-color: #f9b900;
-  padding: 20px;
+  padding: 5px;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: 250%;
+  font-size: 150%;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -42,7 +42,7 @@ h4 {
 }
 
 h5 {
-  font-size: 250%;
+  font-size: 150%;
   color: #2f3a8c;
   text-decoration: none;
   text-align: center;
@@ -79,6 +79,35 @@ figure iframe {
 .bg-img {
 
   background-image: url("images/support.jpg");
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px
+}
+
+.bg-img2 {
+
+  background-image: url("images/cel.png");
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px
+}
+
+.bg-img3 {
+
+  background-image: url("images/2.png");
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px
+}
+.bg-img4 {
+
+  background-image: url("images/3.png");
   min-height: 400px;
   background-position: center;
   background-size: cover;
@@ -150,7 +179,7 @@ div.cell {
 .spancol {
   grid-column-start: 1;
   grid-column-end: 4;
-  padding: 10px;
+  padding: 50px;
 }
 
 .spanrow {
@@ -227,15 +256,15 @@ body {
 
 #more {
   display: none;
-  background-color: #91c5ed;
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 4px; 
-  float: left;
-  cursor: pointer;
   }
 
+#more2 {
+  display: none;
+  }
+
+#more3 {
+  display: none;
+  }
 
 /* form */
 
@@ -255,7 +284,7 @@ input[type=submit] {
   padding: 15px 20px;
   border: none;
   border-radius: 4px; 
-  float: left;
+  float: right;
   cursor: pointer;
 }
 
@@ -277,19 +306,42 @@ input[type=submit]:hover {
   clear: both;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* flexboxes to allow for grid style display of the form */
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; 
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
 /* media */
-
-@media screen and (max-width: 1000px) {
-  #grid-col {
-    grid-template-columns: auto auto; 
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #grid-col {
-    grid-template-columns: 100%;
-  }
-}
 
 @media screen and (max-width: 850px) {
   .topnav a {
@@ -304,6 +356,11 @@ input[type=submit]:hover {
     margin-top: 0;
   }
   
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+
   .sitelogo img{
     width: 50%;
     float: left;
@@ -327,5 +384,8 @@ figure img {
 	
 }
 
+.bg-img, .bg-img2, .bg-img3, .bg-img4 {
+  min-height: 150px;
+}
 
 </style>

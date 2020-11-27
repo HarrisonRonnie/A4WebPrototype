@@ -19,27 +19,10 @@
 		<a href="index.html">Home</a>
 	</nav>
 
-	<!-- help with this function obtained from: https://www.w3schools.com/howto/howto_js_read_more.asp-->
-	<script>
-		function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
-	</script>
-
-  
+	<div class="grid-line">
+			<div class="bg-img3">
+				</div>
+		</div>
 
 
 	<div class="cell spancol">
@@ -51,29 +34,29 @@
 		<h2>What is Depression?</h2>
 		<p>While we don’t actually know what causes depression in human beings, we have a number of things that may link to depression
 			development
-			<span id="dots">...</span><span id="more">Depression is a mental disorder that causes a fluctuating sense of sadness and overall loss of interest. Depression affects motivation, and mood as people may have trouble doing daily activities, and sometimes you may feel as if life isn't worth living. It is more than an occasional sadness, it is a serious mental condition that affects your physical and mental health. Depression does not have a cure, however like many things, there are remedies one can take to be as healthy and happy as possible. The two main treatments for depression are psychological and medical. Psychological. Cognitive behaviour therapy is a mindset that realises the way we think and act affects the way we feel. CBT involves identifying the cognitive actions that you may do that could be the root cause of depression. Behaviour therapy involves taking part in activities that are good for the mind. This may include outdoor activities, physical exercise, creating a routine or learning and instrument. Support groups. Parents, societies, friends and professional therapists can all help in connecting with others.</span></p>
+			<span id="dots1">...</span><span id="more">Depression is a mental disorder that causes a fluctuating sense of sadness and overall loss of interest. Depression affects motivation, and mood as people may have trouble doing daily activities, and sometimes you may feel as if life isn't worth living. It is more than an occasional sadness, it is a serious mental condition that affects your physical and mental health. Depression does not have a cure, however like many things, there are remedies one can take to be as healthy and happy as possible. The two main treatments for depression are psychological and medical. Psychological. Cognitive behaviour therapy is a mindset that realises the way we think and act affects the way we feel. CBT involves identifying the cognitive actions that you may do that could be the root cause of depression. Behaviour therapy involves taking part in activities that are good for the mind. This may include outdoor activities, physical exercise, creating a routine or learning and instrument. Support groups. Parents, societies, friends and professional therapists can all help in connecting with others.</span></p>
 
-<button onclick="myFunction()" id="myBtn">Read more</button>
+<button onclick="myFunction1()" id="myBtn">Read more</button>
 	</div>
   
 
 
-<div class="orangebg">
+
   	<div class="cell">
     <h2>What to do if your friends are showing signs of self harm?</h2>
-    <p>First thing anyone can do is locate signs and symptoms, There are a few things to look out for. Behaviour, feelings, thoughts and physical<span id="dots">...</span><span id="more"><ol>
+    <p>First thing anyone can do is locate signs and symptoms, There are a few things to look out for. Behaviour, feelings, thoughts and physical<span id="dots2">...</span><span id="more2"><ol>
       <li>Talk to them. This one may seem obvious but the first thing anyone can do is simply ask if they’re doing alright. Let them know that you’re always down to talk and can talk about anything, however do not pry if they are not willing to share every detail but allow them to open up to you when they are ready. More importantly than talking to them is listening to them. Once you’ve shared you concerns if they feel like opening up and venting a little, pay attention to every detail, let them talk. Don’t interrupt, act disinterested or argue. Let them speak their mind and you can share your thoughts after when the situation is more under control and less severe. Throughout the conversation just remember it’s about them and not you, try not to change the topic to focus too much on you (in some situations it can help to help them relate however it’s best to not do this too often), and show positive body language and tone to keep them calm. If you’re not free to talk or experiencing a busy period as many students do, refer them to a therapist or to a support network such as the Beyond Blue support program to ensure they have someone to talk to 24/7 </li>
         
       <li>Give them tips to help cope. There’s a good chance the person that you’re talking to is a good friend of yours that you know quite well. In that case, it may be in their best interest, depending on how fragile the situation is, for them to pick up hobbies or habits to allow their brain to produce the chemicals that it associates with happiness. Remind them of the guitar that hasn’t been played with in 3 months or go back to the gym with them (exercise is a great way to make the brain feel better), </li>
       </ol>
 </span></p>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+<button onclick="myFunction2()" id="myBtn2">Read more</button>
 </div>
-</div>
+
 
   	<div class="cell">
     <h2>4 Things you can do to improve your study habits and feel good about learning</h2>
-    <p>Studying can feel unfair and unrewarding sometimes and many students may feel a sense of dread when studying. However, there may be some different approaches you can try that may drastically improve your learning skills<span id="dots">...</span><span id="more">
+    <p>Studying can feel unfair and unrewarding sometimes and many students may feel a sense of dread when studying. However, there may be some different approaches you can try that may drastically improve your learning skills<span id="dots3">...</span><span id="more3">
       <ol>
        <li> 
          <h2> Study with a friend </h2>
@@ -89,9 +72,63 @@ Changing the location in which you study could drastically improve memory retent
 </ol>
 </span>
 
-<button onclick="myFunction()" id="myBtn">Read more</button>
+<button onclick="myFunction3()" id="myBtn3">Read more</button>
 	</div>
   </div>
+
+	<!-- help with this function obtained from: https://www.w3schools.com/howto/howto_js_read_more.asp-->
+	<script>
+		function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+	<script>
+		function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+	<script>
+		function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+
 
       <div class="footer">
         <a href="https://www.facebook.com/beyondblue"><img src="images/facebook.png" class="icon-style" alt="Facebook"></a>
