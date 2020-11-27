@@ -36,11 +36,10 @@
 			development
 			<span id="dots1">...</span><span id="more">Depression is a mental disorder that causes a fluctuating sense of sadness and overall loss of interest. Depression affects motivation, and mood as people may have trouble doing daily activities, and sometimes you may feel as if life isn't worth living. It is more than an occasional sadness, it is a serious mental condition that affects your physical and mental health. Depression does not have a cure, however like many things, there are remedies one can take to be as healthy and happy as possible. The two main treatments for depression are psychological and medical. Psychological. Cognitive behaviour therapy is a mindset that realises the way we think and act affects the way we feel. CBT involves identifying the cognitive actions that you may do that could be the root cause of depression. Behaviour therapy involves taking part in activities that are good for the mind. This may include outdoor activities, physical exercise, creating a routine or learning and instrument. Support groups. Parents, societies, friends and professional therapists can all help in connecting with others.</span></p>
 
-<button onclick="myFunction1()" id="myBtn">Read more</button>
+
+
+<button onclick="myFunction1()" id="myBtn">Read more</button> <!-- calling the button function  -->
 	</div>
-  
-
-
 
   	<div class="cell">
     <h2>What to do if your friends are showing signs of self harm?</h2>
@@ -57,6 +56,7 @@
   	<div class="cell">
     <h2>4 Things you can do to improve your study habits and feel good about learning</h2>
     <p>Studying can feel unfair and unrewarding sometimes and many students may feel a sense of dread when studying. However, there may be some different approaches you can try that may drastically improve your learning skills<span id="dots3">...</span><span id="more3">
+      <!-- ordered list to show the list as numbered  -->
       <ol>
        <li> 
          <h2> Study with a friend </h2>
@@ -76,14 +76,15 @@ Changing the location in which you study could drastically improve memory retent
 	</div>
   </div>
 
-	<!-- help with this function obtained from: https://www.w3schools.com/howto/howto_js_read_more.asp-->
+	<!-- help with this function obtained from: https://www.w3schools.com/howto/howto_js_read_more.asp -->
+  <!-- else function to determine if the button should read "read more" or "read less" --> 
 	<script>
 		function myFunction1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
+  if (dots.style.display === "none") { 
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
     moreText.style.display = "none";

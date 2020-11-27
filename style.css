@@ -12,11 +12,13 @@ body {
   
 }
 
+/* orange div*/
 .orangebg {
   background-color: #f9b900;
   padding: 5px;
 }
 
+/*header styles*/
 h1 {
   color: #2f3a8c;
   text-decoration: none;
@@ -76,6 +78,8 @@ figure iframe {
   padding: 15px;
 }
 
+/* background images that is for under the header, different images for the different pages */
+
 .bg-img {
 
   background-image: url("images/support.jpg");
@@ -115,7 +119,7 @@ figure iframe {
   padding: 15px
 }
 
-/* ul */
+/* ul list styles*/
 
 ul#menu li {
   display:inline;
@@ -153,8 +157,7 @@ ul {
   
 }
 
-/*grid*/
-
+/* grids */
 .grid-line {
   display: grid;
   grid-template-columns: auto auto;
@@ -319,6 +322,7 @@ input[type=submit]:hover {
 }
 
 
+/* styles for different positions of the flexbox*/
 
 .col-25 {
   -ms-flex: 25%;
@@ -341,10 +345,10 @@ input[type=submit]:hover {
   padding: 0 16px;
 }
 
-/* media */
+/* media queries*/
 
 @media screen and (max-width: 850px) {
-  .topnav a {
+  .topnav a { /* changing the orientation of the nav links in the nav bar*/
     float: none;
     display: block;
     text-align: right;
