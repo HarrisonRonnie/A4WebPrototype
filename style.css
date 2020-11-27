@@ -52,7 +52,7 @@ h5 {
 /* images */
 .sitelogo img {
   display: block;
-  position: absolute;
+  position: relative;
   float: left;
   width: 20%;
 }
